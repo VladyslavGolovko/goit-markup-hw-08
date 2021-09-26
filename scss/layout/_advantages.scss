@@ -1,6 +1,4 @@
 .advantages__box {
-  width: 270px;
-  height: 120px;
   background-color: var(--our-team-bg-color);
   border-radius: 4px;
   display: flex;
@@ -29,7 +27,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 30px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
