@@ -2,12 +2,12 @@
   margin-left: 93px;
 }
 
-.subscribe-form-right {
+.subscribe-form__box {
   display: flex;
   align-items: center;
 }
 
-.subscribe__title {
+.subscribe-form__title {
   display: block;
   @include font(14px, 700, 0.03em);
   text-transform: uppercase;
@@ -15,7 +15,7 @@
   margin-bottom: 20px;
 }
 
-.subscribe-email__input {
+.subscribe-form__input {
   outline: none;
   width: 358px;
   height: 50px;
@@ -33,7 +33,7 @@
   }
 }
 
-.subscribe__btn {
+.subscribe-form__btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@
   }
 }
 
-.subscribe__icon {
+.subscribe-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }
