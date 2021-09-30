@@ -1,9 +1,28 @@
+/*@media screen and (min-width: 480px) {
+  .advantages__box {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advantages__box-text {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}*/
+
 .advantages__box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 25px 0;
   background-color: var(--our-team-bg-color);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .advantages {
@@ -23,11 +42,11 @@
 
   @media screen and (min-width: 768px) {
     margin: 15px;
-    flex-basis: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 
