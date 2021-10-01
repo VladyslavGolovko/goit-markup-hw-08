@@ -1,4 +1,4 @@
-/*.advantages__box {
+.advantages__box {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -47,4 +47,4 @@
 .advantages__text {
   @include font(14px, 1.71, 400, 0.03em);
   color: var(--main-text-color);
-}*/
+}

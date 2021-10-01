@@ -1,10 +1,12 @@
-/*.filters {
+.filters {
   @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
     justify-content: center;
   }
 }
@@ -27,8 +29,7 @@
       }
     }
   }
-}*/
-
+}
 .filters__button {
   padding: 6px 22px 6px 22px;
   font-weight: 500;
