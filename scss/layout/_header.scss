@@ -1,4 +1,79 @@
-.header .container {
+.menu-open {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  display: block;
+  margin-left: auto;
+}
+
+.menu-open__icon {
+  width: 24px;
+  height: 16px;
+}
+
+.mob-menu {
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+}
+
+.menu-close {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: #303030;
+  border: none;
+  display: block;
+  margin-left: auto;
+}
+
+.mob-menu-list {
+  margin-bottom: 64px;
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header-list {
+  display: none;
+}
+
+.contacts {
+  display: none;
+}
+
+.header {
+  background-color: var(--tertiary-text-color);
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header-logo {
+  margin-right: 70px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.17;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.header-logo__span {
+  color: var(--accent-color);
+}
+
+/*.header .container {
   display: flex;
   align-items: center;
 }
@@ -26,13 +101,14 @@
 
 /* NAV */
 
-.header-navigation {
+/*.header-navigation {
   display: flex;
   align-items: center;
 }
 
 .header-list {
   display: flex;
+  display: none;
 }
 
 .header-list__item:not(:last-child) {
@@ -76,11 +152,13 @@
 .contacts {
   @media screen and (min-width: 768px) {
     display: block;
+    display: none;
     margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    display: none;
   }
 }
 
@@ -111,7 +189,7 @@
   }
 }*/
 
-.contacts__icon {
+/*.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -121,7 +199,7 @@
   align-items: center;
   /*padding-top: 32px;
   padding-bottom: 32px;*/
-  font-weight: 500;
+/*font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
