@@ -58,27 +58,33 @@
         <div class="contacts-wrapper">
         <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link contacts__link--mobile" lang="en" href="mailto:info@devstudio.com">
+            <a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-e-mail"></use>
               </svg>
               info@devstudio.com
             </a>
-          </li>
-          <li class="contacts-item">
-            <a class="contacts__link" lang="en" href="tel:+380961111111">
+            <li class="contacts-item">
+            <a class="contacts__link contacts__link--mobile" lang="en" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
+          </li>
         </ul>
         <ul class="socials-mobile">
-          <li>Instagram</li>
-          <li>Twitter</li>
-          <li>Facebook</li>
-          <li>LinkedIn</li>
+          <li class="socials-mobile__item">
+            <a class="socials-mobile__link">Instagram</a>
+          </li>
+          <li class="socials-mobile__item">
+            <a class="socials-mobile__link">Twitter</a>
+          <li class="socials-mobile__item">
+            <a class="socials-mobile__link">Facebook</a>
+          <li class="socials-mobile__item">
+            <a class="socials-mobile__link">LinkedIn</a>
+          </li>
         </ul>
         </div>
       </div>
@@ -150,37 +156,46 @@
         <ul class="works">
           <li class="works__item">
             <div class="works__box">
-              <img
-                class="works-card__image"
-                src="./images/what-we-do/box-1.jpg"
-                width="370"
-                height="294"
-                alt="Разработчик пишет код за компьютером"
+              <picture>
+              <source
+                srcset="
+                  ./images/works/box-1-x1.jpg 1x,
+                  ./images/works/box-1-x2.jpg 2x
+                "
+                media="(min-width: 1200px)"
               />
+              <img src="./images/works/box-1-x1.jpg" alt="Разработчик пишет код за компьютером" />
+            </picture>
               <h3 class="works__text">Десктопные приложения</h3>
             </div>
           </li>
           <li class="works__item">
             <div class="works__box">
-              <img
-                class="works-card__image"
-                src="./images/what-we-do/box-2.jpg"
-                width="370"
-                height="294"
-                alt="Маркетолог звонит клиенту"
+              <picture>
+              <source
+                srcset="
+                  ./images/works/box-2-x1.jpg 1x,
+                  ./images/works/box-2-x2.jpg 2x
+                "
+                media="(min-width: 1200px)"
               />
+              <img src="./images/works/box-2-x1.jpg" alt="Маркетолог звонит клиенту" />
+            </picture>
               <h3 class="works__text">Мобильные приложения</h3>
             </div>
           </li>
           <li class="works__item">
             <div class="works__box">
-              <img
-                class="works-card__image"
-                src="./images/what-we-do/box-3.jpg"
-                width="370"
-                height="294"
-                alt="Дизайнер выбирает цвета на планшете"
+              <picture>
+              <source
+                srcset="
+                  ./images/works/box-3-x1.jpg 1x,
+                  ./images/works/box-3-x2.jpg 2x
+                "
+                media="(min-width: 1200px)"
               />
+              <img src="./images/works/box-3-x1.jpg" alt="Дизайнер выбирает цвета на планшете" />
+            </picture>
               <h3 class="works__text">Дизайнерские вещи</h3>
             </div>
           </li>
@@ -334,7 +349,7 @@
                 "
                 media="(min-width: 480px)"
               />
-              <img src="./images/our-team/img-phone-3-x1.jpg x1" alt="Третий разработчик" />
+              <img src="./images/our-team/img-phone-3-x1.jpg" alt="Третий разработчик" />
             </picture>
             <div class="our-team__box">
               <h3 class="our-team__title">Николай Тарасов</h3>
