@@ -1,11 +1,9 @@
-.section--none {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
-}
-
-.section--no-padding-top {
+.section__works {
+  display: none;
   padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .works {

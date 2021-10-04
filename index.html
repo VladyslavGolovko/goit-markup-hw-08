@@ -23,12 +23,26 @@
     <title>Веб-студия</title>
   </head>
   <body>
-    <!--<header class="header">
-      <div class="container">
-        <nav class="header-navigation">
-          <a class="header-logo" lang="en" href="./index.html"
+    <header class="header">
+      <div class="container header__container">
+        <a class="header-logo" lang="en" href="./index.html"
             ><span class="header-logo__span">Web</span>Studio</a
           >
+        
+        <button class="menu-open" data-menu-open>
+          <svg class="menu-open__icon">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="menu-close" data-menu-close>
+          <svg class="menu-close__icon">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="header-navigation">
+          
           <ul class="header-list">
             <li class="header-list__item">
               <a class="header-list__link header-list__link--current" href="">Студия</a>
@@ -41,9 +55,10 @@
             </li>
           </ul>
         </nav>
+        <div class="contacts-wrapper">
         <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
+            <a class="contacts__link contacts__link--mobile" lang="en" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-e-mail"></use>
               </svg>
@@ -58,50 +73,17 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>-->
-        <!--<button class="menu-open" data-menu-open>
-          <svg class="menu-open__icon">
-            <use href="./images/icons.svg#icon-menu-open"></use>
-          </svg>
-        </button>
-      </div>-->
-      <!--<div class="mob-menu is-hidden" data-menu>
-        <button class="menu-close" data-menu-close>
-          <svg class="menu-close__icon">
-            <use href="./images/icons.svg#icon-menu-close"></use>
-          </svg>
-          <ul class="mob-menu-list">
-            <li class="mob-menu__item">
-              <a class="mob-menu__link header-list__link--current" href="">Студия</a>
-            </li>
-            <li class="mob-menu__item">
-              <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="mob-menu__item">
-              <a class="mob-menu__link" href="">Контакты</a>
-            </li>
-          </ul>
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
-                <svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-e-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts__link" lang="en" href="tel:+380961111111">
-                <svg class="contacts__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </button>
+        </ul>
+        <ul class="socials-mobile">
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>LinkedIn</li>
+        </ul>
+        </div>
       </div>
-    </header>-->
+      </div>
+    </header>
     <section class="section hero">
       <div class="container">
         <h1 class="hero__title">
@@ -162,7 +144,7 @@
         </ul>
       </div>
     </section>
-    <section class="section section--no-padding-top section--none">
+    <section class="section section__works">
       <div class="container">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="works">
@@ -230,7 +212,7 @@
                   ./images/our-team/img-phone-1-x1.jpg 1x,
                   ./images/our-team/img-phone-1-x2.jpg 2x
                 "
-                media="(min-width: 768px)"
+                media="(min-width: 480px)"
               />
               <img src="./images/our-team/img-phone-1-x1.jpg" alt="Первый разработчик" />
             </picture>
@@ -506,8 +488,9 @@
         </div>
       </section>
     </main>
-    <!--<footer class="footer">
-      <div class="footer-list container">
+    <footer class="footer">
+     <div class="footer-list container">
+       <div class="footer-wrapper">
         <div class="footer-logo-main">
           <a class="footer-logo" lang="en" href="./index.html"
             ><span class="footer-logo__span">Web</span>Studio</a
@@ -569,6 +552,7 @@
               </a>
             </li>
           </ul>
+        </div>
         </div>
         <form class="subscribe-form" action="#" autocomplete="off">
           <b class="subscribe-form__title">Подпишитесь на рассылку</b>
